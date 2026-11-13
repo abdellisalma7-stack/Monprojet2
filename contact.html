@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Le Délice</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Le Délice</h1>
+        <p>Contact et inscription</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="produits.html">Produits</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Formulaire de contact</h2>
+
+       
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Le Délice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="entete">
+    <h1>Contactez-nous / Inscrivez-vous</h1>
+    <p>Restaurant Le Délice</p>
+</header>
+
+<nav class="navigation">
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="produits.html">Nos plats</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+    <h2 class="titre-section">Formulaire de contact</h2>
+
+    <form action="#" method="post">
+
+        <!-- GROUPE 1 : VOS COORDONNEES -->
+
+        <fieldset>
+            <legend>1 - Vos coordonnées</legend>
+
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom"
+                   placeholder="Votre nom"
+                   maxlength="50" required autofocus>
+
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" name="prenom"
+                   placeholder="Votre prénom"
+                   maxlength="50" required>
+
+            <label for="date">Date de naissance</label>
+            <input type="date" id="date" name="date">
+
+            <label for="email">Adresse email *</label>
+            <input type="email" id="email" name="email"
+                   placeholder="exemple@email.com" required>
+
+            <label for="site">Site web</label>
+            <input type="url" id="site" name="site"
+                   value="http://www."
+                   placeholder="https://monsite.com">
+
+            <label for="secret">Code secret</label>
+            <input type="password" id="secret" name="secret"
+                   minlength="6" maxlength="20">
+
+            <p>Genre :</p>
+
+            <input type="radio" id="homme"
+                   name="genre" value="Homme" checked>
+            <label for="homme">Homme</label>
+
+            <input type="radio" id="femme"
+                   name="genre" value="Femme">
+            <label for="femme">Femme</label>
+
+            <br><br>
+
+            <label for="pays">Pays</label>
+            <select id="pays" name="pays">
+                <option value="Tunisie">Tunisie</option>
+                <option value="France">France</option>
+                <option value="Algérie">Algérie</option>
+                <option value="Maroc">Maroc</option>
+                <option value="Autre">Autre</option>
+            </select>
+
+        </fieldset>
+
+
+        <!-- GROUPE 2 : INFORMATIONS COMPLEMENTAIRES -->
+
+        <fieldset>
+            <legend>2 - Informations complémentaires</legend>
+
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone"
+                   pattern="[0-9]{8}"
+                   placeholder="12345678">
+
+            <label for="adresse">Adresse postale</label>
+            <input type="text" id="adresse" name="adresse"
+                   placeholder="Votre adresse">
+
+            <label for="codepostal">Code postal</label>
+            <input type="text" id="codepostal" name="codepostal"
+                   value="1000" maxlength="4">
+
+            <label for="semestre">Semestre</label>
+            <select id="semestre" name="semestre">
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+                <option value="S4">S4</option>
+            </select>
+
+            <label for="region">Région préférée</label>
+            <select id="region" name="region">
+                <option value="Tunis">Tunis</option>
+                <option value="Sousse">Sousse</option>
+                <option value="Sfax">Sfax</option>
+                <option value="Djerba">Djerba</option>
+                <option value="Tozeur">Tozeur</option>
+            </select>
+
+        </fieldset>
+
+
+        <!-- GROUPE 3 : GOUTS ET CENTRES D'INTERET -->
+
+        <fieldset>
+            <legend>3 - Goûts et centres d'intérêt</legend>
+
+            <p>Centres d'intérêt :</p>
+
+            <input type="checkbox" id="culture"
+                   name="interet" value="Culture" checked>
+            <label for="culture">Culture</label>
+
+            <input type="checkbox" id="gastronomie"
+                   name="interet" value="Gastronomie">
+            <label for="gastronomie">Gastronomie</label>
+
+            <input type="checkbox" id="plage"
+                   name="interet" value="Plage">
+            <label for="plage">Plage</label>
+
+            <input type="checkbox" id="desert"
+                   name="interet" value="Désert">
+            <label for="desert">Désert</label>
+
+            <input type="checkbox" id="histoire"
+                   name="interet" value="Histoire">
+            <label for="histoire">Histoire</label>
+
+            <br><br>
+
+            <label for="niveau">Niveau en HTML</label>
+            <input type="range" id="niveau" name="niveau"
+                   min="0" max="100" step="10">
+
+            <label for="note">Note de satisfaction</label>
+            <input type="number" id="note" name="note"
+                   min="1" max="10" step="1">
+
+            <label for="message">Message / Commentaire</label>
+            <textarea id="message" name="message"
+                      rows="5" cols="40"
+                      placeholder="Écrivez votre message ici..."></textarea>
+
+        </fieldset>
+
+
+        <!-- GROUPE 4 : PHOTO -->
+
+        <fieldset>
+            <legend>4 - Photo</legend>
+
+            <label for="photo">Photo de profil</label>
+            <input type="file" id="photo" name="photo"
+                   accept="image/*">
+
+        </fieldset>
+
+
+        <!-- BOUTONS -->
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+
+    </form>
+
+    <p class="centrer">
+        <a href="index.html" class="bouton">
+            Retour à l'accueil
+        </a>
+    </p>
+
+</main>
+
+<footer class="pied">
+    <p>&copy; 2026 Le Délice - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Le Délice - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
